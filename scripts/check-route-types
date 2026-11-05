@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+"""Diff the google-hvt entries of data/route-types.json against the Google snapshot.
+
+Compares codes, label.en, googleSupported and examples. Exits 1 on any drift.
+"""
+
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+SNAPSHOT = ROOT / "reference" / "google-extended-route-types.md"
+DATA = ROOT / "data" / "route-types.json"
+
+ROW = re.compile(r"^\| (\**\d+\**) \| (.+?) \| (Yes|No) \| (.+?) \|$")
+NO_EXAMPLES = {"N/A", "Not applicable (N/A)"}
+
+
+def snapshot_rows() -> dict[int, dict]:
+    rows: dict[int, dict] = {}
+    for line in SNAPSHOT.read_text("utf-8").splitlines():
+        m = ROW.match(line.strip())
+        if not m:
+            continue
+        code = int(m[1].strip("*"))
+        if code in rows:
+            sys.exit(f"[check-route-types] duplicate code {code} in snapshot")
+        rows[code] = {
+            "label": m[2].strip("*"),
+            "googleSupported": m[3] == "Yes",
+            "examples": None if m[4] in NO_EXAMPLES else m[4],
+        }
+    return rows
+
+
+def main() -> int:
+    ref = snapshot_rows()
+    if not ref:
+        print(f"[check-route-types] no table rows parsed from {SNAPSHOT}")
+        return 1
+    ours = {
+        rt["code"]: rt
+        for rt in json.loads(DATA.read_text("utf-8"))["routeTypes"]
+        if rt["source"] == "google-hvt"
+    }
+    errors: list[str] = []
+    for code in sorted(ref.keys() - ours.keys()):
+        errors.append(f"{code}: in snapshot, missing from JSON")
+    for code in sorted(ours.keys() - ref.keys()):
+        errors.append(f"{code}: in JSON, missing from snapshot")
+    for code in sorted(ref.keys() & ours.keys()):
+        r, o = ref[code], ours[code]
+        checks = [
+            ("label.en", r["label"], o["label"]["en"]),
+            ("googleSupported", r["googleSupported"], o["googleSupported"]),
+            ("examples", r["examples"], o["examples"]),
+        ]
+        for name, want, got in checks:
+            if want != got:
+                errors.append(f"{code} {name}: snapshot {want!r}, JSON {got!r}")
+    for e in errors:
+        print(f"[check-route-types] {e}")
+    print(f"[check-route-types] {len(ref)} snapshot codes, {len(errors)} difference(s)")
+    return 1 if errors else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
