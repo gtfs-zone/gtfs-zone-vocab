@@ -1,0 +1,1182 @@
+{
+  "families": [
+    {
+      "slug": "tram",
+      "label": {
+        "en": "Tram",
+        "fr": "Tramway"
+      }
+    },
+    {
+      "slug": "metro",
+      "label": {
+        "en": "Metro",
+        "fr": "Métro"
+      }
+    },
+    {
+      "slug": "rail",
+      "label": {
+        "en": "Rail",
+        "fr": "Train"
+      }
+    },
+    {
+      "slug": "coach",
+      "label": {
+        "en": "Coach",
+        "fr": "Autocar"
+      }
+    },
+    {
+      "slug": "bus",
+      "label": {
+        "en": "Bus",
+        "fr": "Bus"
+      }
+    },
+    {
+      "slug": "trolleybus",
+      "label": {
+        "en": "Trolleybus",
+        "fr": "Trolleybus"
+      }
+    },
+    {
+      "slug": "ferry",
+      "label": {
+        "en": "Ferry",
+        "fr": "Ferry"
+      }
+    },
+    {
+      "slug": "cable",
+      "label": {
+        "en": "Cable transport",
+        "fr": "Transport par câble"
+      }
+    },
+    {
+      "slug": "funicular",
+      "label": {
+        "en": "Funicular",
+        "fr": "Funiculaire"
+      }
+    },
+    {
+      "slug": "air",
+      "label": {
+        "en": "Air",
+        "fr": "Transport aérien"
+      }
+    },
+    {
+      "slug": "taxi",
+      "label": {
+        "en": "Taxi",
+        "fr": "Taxi"
+      }
+    },
+    {
+      "slug": "misc",
+      "label": {
+        "en": "Miscellaneous",
+        "fr": "Divers"
+      }
+    }
+  ],
+  "routeTypes": [
+    {
+      "code": 0,
+      "source": "gtfs",
+      "label": {
+        "en": "Tram, Streetcar, Light rail",
+        "fr": "Tramway ou métro léger"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 0,
+      "family": "tram"
+    },
+    {
+      "code": 1,
+      "source": "gtfs",
+      "label": {
+        "en": "Subway, Metro",
+        "fr": "Métro"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 1,
+      "family": "metro"
+    },
+    {
+      "code": 2,
+      "source": "gtfs",
+      "label": {
+        "en": "Rail",
+        "fr": "Train"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 3,
+      "source": "gtfs",
+      "label": {
+        "en": "Bus",
+        "fr": "Bus"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 4,
+      "source": "gtfs",
+      "label": {
+        "en": "Ferry",
+        "fr": "Ferry"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 4,
+      "family": "ferry"
+    },
+    {
+      "code": 5,
+      "source": "gtfs",
+      "label": {
+        "en": "Cable tram",
+        "fr": "Tramway à câble"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 5,
+      "family": "cable"
+    },
+    {
+      "code": 6,
+      "source": "gtfs",
+      "label": {
+        "en": "Aerial lift, suspended cable car (e.g., gondola lift, aerial tramway)",
+        "fr": "Remontée aérienne"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 7,
+      "source": "gtfs",
+      "label": {
+        "en": "Funicular",
+        "fr": "Funiculaire"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 7,
+      "family": "funicular"
+    },
+    {
+      "code": 11,
+      "source": "gtfs",
+      "label": {
+        "en": "Trolleybus",
+        "fr": "Trolleybus"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 11,
+      "family": "trolleybus"
+    },
+    {
+      "code": 12,
+      "source": "gtfs",
+      "label": {
+        "en": "Monorail",
+        "fr": "Monorail"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 12,
+      "family": "metro"
+    },
+    {
+      "code": 100,
+      "source": "google-hvt",
+      "label": {
+        "en": "Railway Service",
+        "fr": "Service ferroviaire"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 101,
+      "source": "google-hvt",
+      "label": {
+        "en": "High Speed Rail Service",
+        "fr": "Train à grande vitesse"
+      },
+      "examples": "TGV (FR), ICE (DE), Eurostar (GB)",
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 102,
+      "source": "google-hvt",
+      "label": {
+        "en": "Long Distance Trains",
+        "fr": "Trains grandes lignes"
+      },
+      "examples": "InterCity/EuroCity",
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 103,
+      "source": "google-hvt",
+      "label": {
+        "en": "Inter Regional Rail Service",
+        "fr": "Train interrégional"
+      },
+      "examples": "InterRegio (DE), Cross County Rail (GB)",
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 104,
+      "source": "google-hvt",
+      "label": {
+        "en": "Car Transport Rail Service",
+        "fr": "Train autos"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 105,
+      "source": "google-hvt",
+      "label": {
+        "en": "Sleeper Rail Service",
+        "fr": "Train de nuit"
+      },
+      "examples": "GNER Sleeper (GB)",
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 106,
+      "source": "google-hvt",
+      "label": {
+        "en": "Regional Rail Service",
+        "fr": "Train régional"
+      },
+      "examples": "TER (FR), Regionalzug (DE)",
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 107,
+      "source": "google-hvt",
+      "label": {
+        "en": "Tourist Railway Service",
+        "fr": "Train touristique"
+      },
+      "examples": "Romney, Hythe & Dymchurch (GB)",
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 108,
+      "source": "google-hvt",
+      "label": {
+        "en": "Rail Shuttle (Within Complex)",
+        "fr": "Navette ferroviaire (interne à un site)"
+      },
+      "examples": "Gatwick Shuttle (GB), Sky Line (DE)",
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 109,
+      "source": "google-hvt",
+      "label": {
+        "en": "Suburban Railway",
+        "fr": "Train de banlieue"
+      },
+      "examples": "S-Bahn (DE), RER (FR), S-tog (Kopenhagen)",
+      "googleSupported": true,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 110,
+      "source": "google-hvt",
+      "label": {
+        "en": "Replacement Rail Service",
+        "fr": "Service ferroviaire de remplacement"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 111,
+      "source": "google-hvt",
+      "label": {
+        "en": "Special Rail Service",
+        "fr": "Service ferroviaire spécial"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 112,
+      "source": "google-hvt",
+      "label": {
+        "en": "Lorry Transport Rail Service",
+        "fr": "Ferroutage de camions"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 113,
+      "source": "google-hvt",
+      "label": {
+        "en": "All Rail Services",
+        "fr": "Tous services ferroviaires"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 114,
+      "source": "google-hvt",
+      "label": {
+        "en": "Cross-Country Rail Service",
+        "fr": "Service ferroviaire transversal"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 115,
+      "source": "google-hvt",
+      "label": {
+        "en": "Vehicle Transport Rail Service",
+        "fr": "Transport ferroviaire de véhicules"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 116,
+      "source": "google-hvt",
+      "label": {
+        "en": "Rack and Pinion Railway",
+        "fr": "Chemin de fer à crémaillère"
+      },
+      "examples": "Rochers de Naye (CH), Dolderbahn (CH)",
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 117,
+      "source": "google-hvt",
+      "label": {
+        "en": "Additional Rail Service",
+        "fr": "Service ferroviaire supplémentaire"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 2,
+      "family": "rail"
+    },
+    {
+      "code": 200,
+      "source": "google-hvt",
+      "label": {
+        "en": "Coach Service",
+        "fr": "Service d'autocar"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 201,
+      "source": "google-hvt",
+      "label": {
+        "en": "International Coach Service",
+        "fr": "Autocar international"
+      },
+      "examples": "EuroLine, Touring",
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 202,
+      "source": "google-hvt",
+      "label": {
+        "en": "National Coach Service",
+        "fr": "Autocar national"
+      },
+      "examples": "National Express (GB)",
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 203,
+      "source": "google-hvt",
+      "label": {
+        "en": "Shuttle Coach Service",
+        "fr": "Navette en autocar"
+      },
+      "examples": "Roissy Bus (FR), Reading-Heathrow (GB)",
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 204,
+      "source": "google-hvt",
+      "label": {
+        "en": "Regional Coach Service",
+        "fr": "Autocar régional"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 205,
+      "source": "google-hvt",
+      "label": {
+        "en": "Special Coach Service",
+        "fr": "Service d'autocar spécial"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 206,
+      "source": "google-hvt",
+      "label": {
+        "en": "Sightseeing Coach Service",
+        "fr": "Autocar d'excursion"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 207,
+      "source": "google-hvt",
+      "label": {
+        "en": "Tourist Coach Service",
+        "fr": "Autocar touristique"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 208,
+      "source": "google-hvt",
+      "label": {
+        "en": "Commuter Coach Service",
+        "fr": "Autocar de navetteurs"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 209,
+      "source": "google-hvt",
+      "label": {
+        "en": "All Coach Services",
+        "fr": "Tous services d'autocar"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "coach"
+    },
+    {
+      "code": 400,
+      "source": "google-hvt",
+      "label": {
+        "en": "Urban Railway Service",
+        "fr": "Service ferroviaire urbain"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 1,
+      "family": "metro"
+    },
+    {
+      "code": 401,
+      "source": "google-hvt",
+      "label": {
+        "en": "Metro Service",
+        "fr": "Métro"
+      },
+      "examples": "Métro de Paris",
+      "googleSupported": true,
+      "baseType": 1,
+      "family": "metro"
+    },
+    {
+      "code": 402,
+      "source": "google-hvt",
+      "label": {
+        "en": "Underground Service",
+        "fr": "Métro souterrain"
+      },
+      "examples": "London Underground, U-Bahn",
+      "googleSupported": true,
+      "baseType": 1,
+      "family": "metro"
+    },
+    {
+      "code": 403,
+      "source": "google-hvt",
+      "label": {
+        "en": "Urban Railway Service",
+        "fr": "Service ferroviaire urbain"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 1,
+      "family": "metro"
+    },
+    {
+      "code": 404,
+      "source": "google-hvt",
+      "label": {
+        "en": "All Urban Railway Services",
+        "fr": "Tous services ferroviaires urbains"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 1,
+      "family": "metro"
+    },
+    {
+      "code": 405,
+      "source": "google-hvt",
+      "label": {
+        "en": "Monorail",
+        "fr": "Monorail"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 12,
+      "family": "metro"
+    },
+    {
+      "code": 700,
+      "source": "google-hvt",
+      "label": {
+        "en": "Bus Service",
+        "fr": "Service de bus"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 701,
+      "source": "google-hvt",
+      "label": {
+        "en": "Regional Bus Service",
+        "fr": "Bus régional"
+      },
+      "examples": "Eastbourne-Maidstone (GB)",
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 702,
+      "source": "google-hvt",
+      "label": {
+        "en": "Express Bus Service",
+        "fr": "Bus express"
+      },
+      "examples": "X19 Wokingham-Heathrow (GB)",
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 703,
+      "source": "google-hvt",
+      "label": {
+        "en": "Stopping Bus Service",
+        "fr": "Bus omnibus"
+      },
+      "examples": "38 London: Clapton Pond-Victoria (GB)",
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 704,
+      "source": "google-hvt",
+      "label": {
+        "en": "Local Bus Service",
+        "fr": "Bus local"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 705,
+      "source": "google-hvt",
+      "label": {
+        "en": "Night Bus Service",
+        "fr": "Bus de nuit"
+      },
+      "examples": "N prefixed buses in London (GB)",
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 706,
+      "source": "google-hvt",
+      "label": {
+        "en": "Post Bus Service",
+        "fr": "Car postal"
+      },
+      "examples": "Maidstone P4 (GB)",
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 707,
+      "source": "google-hvt",
+      "label": {
+        "en": "Special Needs Bus",
+        "fr": "Bus pour besoins particuliers"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 708,
+      "source": "google-hvt",
+      "label": {
+        "en": "Mobility Bus Service",
+        "fr": "Bus de mobilité"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 709,
+      "source": "google-hvt",
+      "label": {
+        "en": "Mobility Bus for Registered Disabled",
+        "fr": "Bus de mobilité pour personnes handicapées"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 710,
+      "source": "google-hvt",
+      "label": {
+        "en": "Sightseeing Bus",
+        "fr": "Bus touristique"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 711,
+      "source": "google-hvt",
+      "label": {
+        "en": "Shuttle Bus",
+        "fr": "Navette en bus"
+      },
+      "examples": "747 Heathrow-Gatwick Airport Service (GB)",
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 712,
+      "source": "google-hvt",
+      "label": {
+        "en": "School Bus",
+        "fr": "Bus scolaire"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 713,
+      "source": "google-hvt",
+      "label": {
+        "en": "School and Public Service Bus",
+        "fr": "Bus scolaire et public"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 714,
+      "source": "google-hvt",
+      "label": {
+        "en": "Rail Replacement Bus Service",
+        "fr": "Bus de remplacement ferroviaire"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 715,
+      "source": "google-hvt",
+      "label": {
+        "en": "Demand and Response Bus Service",
+        "fr": "Bus à la demande"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 716,
+      "source": "google-hvt",
+      "label": {
+        "en": "All Bus Services",
+        "fr": "Tous services de bus"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 3,
+      "family": "bus"
+    },
+    {
+      "code": 800,
+      "source": "google-hvt",
+      "label": {
+        "en": "Trolleybus Service",
+        "fr": "Service de trolleybus"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 11,
+      "family": "trolleybus"
+    },
+    {
+      "code": 900,
+      "source": "google-hvt",
+      "label": {
+        "en": "Tram Service",
+        "fr": "Service de tramway"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 0,
+      "family": "tram"
+    },
+    {
+      "code": 901,
+      "source": "google-hvt",
+      "label": {
+        "en": "City Tram Service",
+        "fr": "Tramway urbain"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 0,
+      "family": "tram"
+    },
+    {
+      "code": 902,
+      "source": "google-hvt",
+      "label": {
+        "en": "Local Tram Service",
+        "fr": "Tramway local"
+      },
+      "examples": "Munich (DE), Brussels (BE), Croydon (GB)",
+      "googleSupported": false,
+      "baseType": 0,
+      "family": "tram"
+    },
+    {
+      "code": 903,
+      "source": "google-hvt",
+      "label": {
+        "en": "Regional Tram Service",
+        "fr": "Tramway régional"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 0,
+      "family": "tram"
+    },
+    {
+      "code": 904,
+      "source": "google-hvt",
+      "label": {
+        "en": "Sightseeing Tram Service",
+        "fr": "Tramway touristique"
+      },
+      "examples": "Blackpool Seafront (GB)",
+      "googleSupported": false,
+      "baseType": 0,
+      "family": "tram"
+    },
+    {
+      "code": 905,
+      "source": "google-hvt",
+      "label": {
+        "en": "Shuttle Tram Service",
+        "fr": "Navette en tramway"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 0,
+      "family": "tram"
+    },
+    {
+      "code": 906,
+      "source": "google-hvt",
+      "label": {
+        "en": "All Tram Services",
+        "fr": "Tous services de tramway"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 0,
+      "family": "tram"
+    },
+    {
+      "code": 1000,
+      "source": "google-hvt",
+      "label": {
+        "en": "Water Transport Service",
+        "fr": "Transport par voie d'eau"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 4,
+      "family": "ferry"
+    },
+    {
+      "code": 1100,
+      "source": "google-hvt",
+      "label": {
+        "en": "Air Service",
+        "fr": "Transport aérien"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": null,
+      "family": "air"
+    },
+    {
+      "code": 1200,
+      "source": "google-hvt",
+      "label": {
+        "en": "Ferry Service",
+        "fr": "Service de ferry"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 4,
+      "family": "ferry"
+    },
+    {
+      "code": 1300,
+      "source": "google-hvt",
+      "label": {
+        "en": "Aerial Lift Service",
+        "fr": "Remontée aérienne"
+      },
+      "examples": "Telefèric de Montjuïc (ES), Saleve (CH), Roosevelt Island Tramway (US)",
+      "googleSupported": true,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 1301,
+      "source": "google-hvt",
+      "label": {
+        "en": "Telecabin Service",
+        "fr": "Télécabine"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 1302,
+      "source": "google-hvt",
+      "label": {
+        "en": "Cable Car Service",
+        "fr": "Téléphérique"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 1303,
+      "source": "google-hvt",
+      "label": {
+        "en": "Elevator Service",
+        "fr": "Ascenseur"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 1304,
+      "source": "google-hvt",
+      "label": {
+        "en": "Chair Lift Service",
+        "fr": "Télésiège"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 1305,
+      "source": "google-hvt",
+      "label": {
+        "en": "Drag Lift Service",
+        "fr": "Téléski"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 1306,
+      "source": "google-hvt",
+      "label": {
+        "en": "Small Telecabin Service",
+        "fr": "Petite télécabine"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 1307,
+      "source": "google-hvt",
+      "label": {
+        "en": "All Telecabin Services",
+        "fr": "Tous services de télécabine"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": 6,
+      "family": "cable"
+    },
+    {
+      "code": 1400,
+      "source": "google-hvt",
+      "label": {
+        "en": "Funicular Service",
+        "fr": "Funiculaire"
+      },
+      "examples": "Rigiblick (Zürich, CH)",
+      "googleSupported": true,
+      "baseType": 7,
+      "family": "funicular"
+    },
+    {
+      "code": 1500,
+      "source": "google-hvt",
+      "label": {
+        "en": "Taxi Service",
+        "fr": "Service de taxi"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": null,
+      "family": "taxi"
+    },
+    {
+      "code": 1501,
+      "source": "google-hvt",
+      "label": {
+        "en": "Communal Taxi Service",
+        "fr": "Taxi collectif"
+      },
+      "examples": "Marshrutka (RU), dolmuş (TR)",
+      "googleSupported": true,
+      "baseType": null,
+      "family": "taxi"
+    },
+    {
+      "code": 1502,
+      "source": "google-hvt",
+      "label": {
+        "en": "Water Taxi Service",
+        "fr": "Bateau-taxi"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": null,
+      "family": "taxi"
+    },
+    {
+      "code": 1503,
+      "source": "google-hvt",
+      "label": {
+        "en": "Rail Taxi Service",
+        "fr": "Taxi ferroviaire"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": null,
+      "family": "taxi"
+    },
+    {
+      "code": 1504,
+      "source": "google-hvt",
+      "label": {
+        "en": "Bike Taxi Service",
+        "fr": "Vélo-taxi"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": null,
+      "family": "taxi"
+    },
+    {
+      "code": 1505,
+      "source": "google-hvt",
+      "label": {
+        "en": "Licensed Taxi Service",
+        "fr": "Taxi agréé"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": null,
+      "family": "taxi"
+    },
+    {
+      "code": 1506,
+      "source": "google-hvt",
+      "label": {
+        "en": "Private Hire Service Vehicle",
+        "fr": "Véhicule de transport avec chauffeur"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": null,
+      "family": "taxi"
+    },
+    {
+      "code": 1507,
+      "source": "google-hvt",
+      "label": {
+        "en": "All Taxi Services",
+        "fr": "Tous services de taxi"
+      },
+      "examples": null,
+      "googleSupported": false,
+      "baseType": null,
+      "family": "taxi"
+    },
+    {
+      "code": 1700,
+      "source": "google-hvt",
+      "label": {
+        "en": "Miscellaneous Service",
+        "fr": "Service divers"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": null,
+      "family": "misc"
+    },
+    {
+      "code": 1702,
+      "source": "google-hvt",
+      "label": {
+        "en": "Horse-drawn Carriage",
+        "fr": "Calèche"
+      },
+      "examples": null,
+      "googleSupported": true,
+      "baseType": null,
+      "family": "misc"
+    }
+  ]
+}
