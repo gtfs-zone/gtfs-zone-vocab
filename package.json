@@ -1,0 +1,39 @@
+{
+  "name": "gtfs-zone-vocab",
+  "version": "0.0.0",
+  "description": "Shared GTFS vocabularies (route types and families) for the gtfs.zone apps, as JSON, raw TypeScript and Python",
+  "type": "module",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@11.20.0",
+  "files": [
+    "data",
+    "ts"
+  ],
+  "exports": {
+    "./route-types": "./ts/route-types.ts",
+    "./data/route-types.json": "./data/route-types.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ts/ tests/ --max-warnings 0",
+    "lint:fix": "eslint ts/ tests/ --fix",
+    "format": "prettier --write ts/ tests/",
+    "test": "tsx --test tests/*.test.ts",
+    "check:route-types": "python3 scripts/check-route-types",
+    "knip": "knip",
+    "check": "pnpm run typecheck && pnpm run lint && pnpm run knip && pnpm run check:route-types && pnpm run test",
+    "commit": "cz commit",
+    "vuln": "sh scripts/vuln-gate.sh pnpm-lock.yaml && sh scripts/vuln-gate.sh uv.lock"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "knip": "^6.44.1",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.1"
+  }
+}

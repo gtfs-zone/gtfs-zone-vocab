@@ -1,0 +1,48 @@
+publiccodeYmlVersion: "0.4"
+
+name: GTFS.zone Vocab
+url: "https://github.com/gtfs-zone/gtfs-zone-vocab"
+
+platforms:
+  - web
+  - linux
+
+categories:
+  - application-development
+  - geographic-information-systems
+
+developmentStatus: beta
+
+softwareType: "library"
+
+description:
+  en:
+    shortDescription: >
+      Shared GTFS vocabularies (route types and families) for the gtfs.zone apps.
+    longDescription: >
+      GTFS.zone Vocab holds the GTFS vocabularies shared by the gtfs.zone apps
+      and services, starting with route_type: the GTFS base codes and Google's
+      extended Hierarchical Vehicle Type codes, each mapped to a base type and
+      a mode family, with English and French labels. One JSON table is read
+      by a raw TypeScript module and a dependency-free Python package, and a
+      check keeps the extended codes in line with a verbatim snapshot of
+      Google's reference.
+    features:
+      - GTFS and Google extended route types in one table
+      - Mode families in a canonical display order
+      - Same API from TypeScript and Python, pinned by tag
+
+legal:
+  license: Apache-2.0
+
+maintenance:
+  type: community
+  contacts:
+    - name: Max Katz-Christy
+      email: maxkatzchristy@gmail.com
+
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - en
+    - fr

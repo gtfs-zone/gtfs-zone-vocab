@@ -1,0 +1,25 @@
+version = 1
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Max Katz-Christy and gtfs.zone contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+# Verbatim copy of Google's extended route types page
+[[annotations]]
+path = "reference/google-extended-route-types.md"
+precedence = "override"
+SPDX-FileCopyrightText = "Google LLC"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# Base labels are MobilityData's GTFS wording, extended labels and examples are Google's
+[[annotations]]
+path = ["data/route-types.json", "python/gtfs_zone_vocab/route-types.json"]
+precedence = "override"
+SPDX-FileCopyrightText = [
+    "Max Katz-Christy and gtfs.zone contributors",
+    "Google Inc. and contributors",
+    "Google LLC",
+]
+SPDX-License-Identifier = "Apache-2.0 AND CC-BY-4.0"
