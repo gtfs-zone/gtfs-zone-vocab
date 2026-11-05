@@ -16,6 +16,10 @@ pnpm vuln                   # osv-scanner on pnpm-lock.yaml and uv.lock
 
 ## Architecture
 
+- **What belongs here.** Small tables that more than one repo needs, in a
+  form both TS and Python can read. A table moves in when a second repo
+  needs it. The full GTFS Schedule spec and the Google field/file overlays
+  live in gtfs-zone-editor (`src/gtfs-spec/`), their only consumer.
 - **One table, two readers.** Edit `data/route-types.json`, never a list in
   `ts/` or `python/`. `python/gtfs_zone_vocab/route-types.json` is a symlink to
   it so the wheel carries the data.
