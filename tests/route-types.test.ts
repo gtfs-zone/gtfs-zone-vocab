@@ -46,7 +46,10 @@ test('every code has a known family and a valid base type', () => {
       rt.baseType === null || BASE_TYPES.includes(rt.baseType),
       `${rt.code}: baseType ${rt.baseType}`
     );
-    assert.ok(rt.label.en && rt.label.fr, `${rt.code}: missing label`);
+    assert.ok(
+      rt.label.en && rt.label.fr && rt.label.de,
+      `${rt.code}: missing label`
+    );
   }
 });
 

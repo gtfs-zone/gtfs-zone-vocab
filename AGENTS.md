@@ -28,7 +28,7 @@ pnpm vuln                   # osv-scanner on pnpm-lock.yaml and uv.lock
 - **The snapshot is verbatim.** `reference/google-extended-route-types.md` is
   Google's table as published; `label.en`, `googleSupported` and `examples` of
   the `google-hvt` entries follow it, and `check-route-types` enforces that.
-  `label.fr`, `baseType` and `family` are curated.
+  `label.fr`, `label.de`, `baseType` and `family` are curated.
 - **Unknown codes return `undefined` / `None`.** Nothing here logs; consumers
   log with their own prefix.
 - **No barrel files.** Each vocabulary is its own `exports` entry
