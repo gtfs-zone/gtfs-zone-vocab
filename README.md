@@ -13,12 +13,12 @@ a base type and a mode family.
 
 - `families`: the mode families in canonical display order (`tram`, `metro`,
   `rail`, `coach`, `bus`, `trolleybus`, `ferry`, `cable`, `funicular`, `air`,
-  `taxi`, `misc`), each with an en/fr label.
+  `taxi`, `misc`), each with an en/fr/de label.
 - `routeTypes`: one entry per code, sorted by code:
   - `code`
   - `source`: `gtfs` (base) or `google-hvt` (extended)
   - `label.en`: the spec wording (MobilityData for base codes, Google for
-    extended ones); `label.fr`: a translation
+    extended ones); `label.fr` and `label.de`: translations
   - `examples`: Google's examples, or `null`
   - `googleSupported`: whether Google Maps supports the code
   - `baseType`: the base code (0-12) it falls back to, or `null` for air, taxi
@@ -81,7 +81,7 @@ An unknown code returns `undefined` / `None`; the caller decides how to log it.
    over `reference/google-extended-route-types.md`, keeping the header comment
    and updating its page revision and fetch date.
 2. Run `scripts/check-route-types` and fix `data/route-types.json` until it
-   exits zero. A new code also needs `label.fr`, `baseType` and `family`.
+   exits zero. A new code also needs `label.fr`, `label.de`, `baseType` and `family`.
 
 ## License
 

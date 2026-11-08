@@ -23,7 +23,7 @@ description:
       GTFS.zone Vocab holds the GTFS vocabularies shared by the gtfs.zone apps
       and services, starting with route_type: the GTFS base codes and Google's
       extended Hierarchical Vehicle Type codes, each mapped to a base type and
-      a mode family, with English and French labels. One JSON table is read
+      a mode family, with English, French and German labels. One JSON table is read
       by a raw TypeScript module and a dependency-free Python package, and a
       check keeps the extended codes in line with a verbatim snapshot of
       Google's reference.
@@ -46,3 +46,4 @@ localisation:
   availableLanguages:
     - en
     - fr
+    - de

@@ -36,7 +36,7 @@ def test_every_code_has_family_and_valid_base_type():
     for rt in ROUTE_TYPES:
         assert rt.family in FAMILY_ORDER, rt.code
         assert rt.base_type is None or rt.base_type in BASE_TYPES, rt.code
-        assert rt.label.en and rt.label.fr, rt.code
+        assert rt.label.en and rt.label.fr and rt.label.de, rt.code
 
 
 def test_base_codes_are_their_own_base_type():

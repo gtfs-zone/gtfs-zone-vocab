@@ -5,6 +5,7 @@ export type RouteTypeSource = 'gtfs' | 'google-hvt';
 export interface LocalizedLabel {
   en: string;
   fr: string;
+  de: string;
 }
 
 export interface RouteTypeFamily {

@@ -12,6 +12,7 @@ RouteTypeSource = Literal["gtfs", "google-hvt"]
 class LocalizedLabel:
     en: str
     fr: str
+    de: str
 
 
 @dataclass(frozen=True)
